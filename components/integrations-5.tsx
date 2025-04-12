@@ -1,8 +1,9 @@
-import { Gemini, Replit, MagicUI, VSCodium, MediaWiki, GooglePaLM } from '@/components/logos'
+import { Gemini, Replit, MagicUI, VSCodium, MediaWiki, GooglePaLM ,Java, Nextjs, C ,NET}from '@/components/logos'
 import { Logo } from '@/components/logo'
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
+import Python from './logos/Python'
 
 export default function IntegrationsSection() {
     return (
@@ -18,21 +19,21 @@ export default function IntegrationsSection() {
                             className="bg-linear-to-b border-foreground/5 absolute inset-16 z-10 aspect-square scale-90 animate-spin items-center justify-center rounded-full border-t from-blue-500/15 to-transparent to-25% opacity-0 duration-[3.5s] group-hover:opacity-100"></div>
                         <div className="bg-linear-to-b from-muted-foreground/15 absolute inset-0 flex aspect-square items-center justify-center rounded-full border-t to-transparent to-25%">
                             <IntegrationCard className="-translate-x-1/6 absolute left-0 top-1/4 -translate-y-1/4">
-                                <Gemini />
+                                <Python />
                             </IntegrationCard>
                             <IntegrationCard className="absolute top-0 -translate-y-1/2">
-                                <Replit />
+                                <Java />
                             </IntegrationCard>
                             <IntegrationCard className="translate-x-1/6 absolute right-0 top-1/4 -translate-y-1/4">
-                                <MagicUI />
+                                <Nextjs/>
                             </IntegrationCard>
                         </div>
                         <div className="bg-linear-to-b from-muted-foreground/15 absolute inset-16 flex aspect-square scale-90 items-center justify-center rounded-full border-t to-transparent to-25%">
                             <IntegrationCard className="absolute top-0 -translate-y-1/2">
-                                <VSCodium />
+                                <C/>
                             </IntegrationCard>
                             <IntegrationCard className="absolute left-0 top-1/4 -translate-x-1/4 -translate-y-1/4">
-                                <MediaWiki />
+                                < NET/>
                             </IntegrationCard>
                             <IntegrationCard className="absolute right-0 top-1/4 -translate-y-1/4 translate-x-1/4">
                                 <GooglePaLM />
@@ -49,14 +50,14 @@ export default function IntegrationsSection() {
                         </div>
                     </div>
                     <div className="bg-linear-to-t from-background relative z-20 mx-auto mt-12 max-w-lg space-y-6 from-55% text-center">
-                        <h2 className="text-balance text-3xl font-semibold md:text-4xl">Integrate with your favorite tools</h2>
-                        <p className="text-muted-foreground">Connect seamlessly with popular platforms and services to enhance your workflow.</p>
+                        <h2 className="text-balance text-3xl font-semibold md:text-4xl">Crafted using the ideal programming language.</h2>
+                        <p className="text-muted-foreground">Designed for compatibility, ensuring your workflows stay smooth, efficient, and future-ready.</p>
 
                         <Button
                             variant="outline"
                             size="sm"
                             asChild>
-                            <Link href="#">Get Started</Link>
+                            <Link href="#contact">Contact us</Link>
                         </Button>
                     </div>
                 </div>

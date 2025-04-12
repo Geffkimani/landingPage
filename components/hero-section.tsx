@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { TextEffect } from '@/components/ui/text-effect'
 import { AnimatedGroup } from '@/components/ui/animated-group'
 import { HeroHeader } from '@/components/hero5-header'
+import { TypewriterEffect } from '@/components/ui/typewriter-effect' 
 
 const transitionVariants = {
     item: {
@@ -28,6 +29,14 @@ const transitionVariants = {
 }
 
 export default function HeroSection() {
+    const words = [
+        { text: "Smart" },
+        { text: "Solutions" },
+        { text: "for" },
+        { text: "Customer" },
+        { text: "Growth" },
+    ];
+
     return (
         <>
             <HeroHeader />
@@ -82,7 +91,7 @@ export default function HeroSection() {
                                     <Link
                                         href="#link"
                                         className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950">
-                                        <span className="text-foreground text-sm">Introducing Support for AI Models</span>
+                                        <span className="text-foreground text-sm">Introducing our new AI chatbot for quick responses </span>
                                         <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
 
                                         <div className="bg-background group-hover:bg-muted size-6 overflow-hidden rounded-full duration-500">
@@ -98,13 +107,12 @@ export default function HeroSection() {
                                     </Link>
                                 </AnimatedGroup>
 
-                                <TextEffect
-                                    preset="fade-in-blur"
-                                    speedSegment={0.3}
-                                    as="h1"
-                                    className="mt-8 text-balance text-6xl md:text-7xl lg:mt-16 xl:text-[5.25rem]">
-                                    Modern Solutions for Customer Engagement
-                                </TextEffect>
+                                {/* Replace TextEffect with TypewriterEffect */}
+                                <TypewriterEffect
+                                    words={words}
+                                    className="mt-8 text-balance text-6xl md:text-7xl lg:mt-16 xl:text-[5.25rem]"
+                                />
+
                                 <TextEffect
                                     per="line"
                                     preset="fade-in-blur"
@@ -112,7 +120,7 @@ export default function HeroSection() {
                                     delay={0.5}
                                     as="p"
                                     className="mx-auto mt-8 max-w-2xl text-balance text-lg">
-                                    Highly customizable components for building modern websites and applications that look and feel the way you mean it.
+                                    From concept to launch — build unique, client-ready digital experiences with us.
                                 </TextEffect>
 
                                 <AnimatedGroup

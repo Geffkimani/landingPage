@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 export default function ContactSection() {
     return (
-        <section className="py-32">
+        <section id="contact" className="py-32">
             <div className="mx-auto max-w-4xl px-4 lg:px-0">
                 <h1 className="mb-12 text-center text-4xl font-semibold lg:text-5xl">Help us route your inquiry</h1>
 
@@ -19,7 +19,7 @@ export default function ContactSection() {
                             <Link href="mailto:hello@kymcode.io" className="text-lg text-blue-600 hover:underline dark:text-blue-400">
                                 hello@kymcode.io
                             </Link>
-                            <p className="mt-3 text-sm">+243 000 000 000</p>
+                            <p className="mt-3 text-sm">+254 115 116 942</p>
                         </div>
                     </div>
                     <div className="flex flex-col justify-between space-y-8 p-6 sm:p-12">
@@ -28,7 +28,7 @@ export default function ContactSection() {
                             <Link href="mailto:press@kymcode.io" className="text-lg text-blue-600 hover:underline dark:text-blue-400">
                                 press@kymcode.io
                             </Link>
-                            <p className="mt-3 text-sm">+243 000 000 000</p>
+                            <p className="mt-3 text-sm">+254 115 116 942</p>
                         </div>
                     </div>
                 </div>
@@ -68,12 +68,6 @@ export default function ContactSection() {
                                 </Select>
                             </div>
                             <div>
-                                <Label htmlFor="website" className="space-y-2">
-                                    Company Website
-                                </Label>
-                                <Input type="url" id="website" />
-                            </div>
-                            <div>
                                 <Label htmlFor="job" className="space-y-2">
                                     Job function
                                 </Label>
@@ -83,9 +77,9 @@ export default function ContactSection() {
                                     </SelectTrigger>
                                     <SelectContent>
                                         <SelectItem value="1">Finance</SelectItem>
-                                        <SelectItem value="2">Education</SelectItem>
-                                        <SelectItem value="3">Legal</SelectItem>
-                                        <SelectItem value="4">More</SelectItem>
+                                        <SelectItem value="2">Website creation</SelectItem>
+                                        <SelectItem value="3">System Design and development</SelectItem>
+                                        <SelectItem value="4">Pentesting</SelectItem>
                                     </SelectContent>
                                 </Select>
                             </div>
