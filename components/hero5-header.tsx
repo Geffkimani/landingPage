@@ -9,7 +9,7 @@ import { ModeToggle } from './mode-toggle'
 
 const menuItems = [
     { name: 'Services', href: '#services' },
-    { name: 'Our work', href: '#link' },
+    { name: 'Our work', href: '#projects' },
     { name: 'Pricing', href: '#pricing' },
     { name: 'About ', href: '#about' },
 ]

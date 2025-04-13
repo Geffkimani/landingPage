@@ -69,7 +69,7 @@ const links = [
         items: [
             {
                 title: 'About',
-                href: '#',
+                href: '#about',
             },
             {
                 title: 'Careers',
@@ -85,7 +85,7 @@ const links = [
             },
             {
                 title: 'Contact',
-                href: '#',
+                href: '#contact',
             },
             {
                 title: 'Help',
